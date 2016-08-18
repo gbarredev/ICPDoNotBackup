@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="fr.guillaumebarre.icpdonotbackup" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ICPDoNotBackup</name>
+    <js-module name="ICPDoNotBackup" src="www/ICPDoNotBackup.js">
+        <clobbers target="cordova.plugins.ICPDoNotBackup" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ICPDoNotBackup">
+                <param name="ios-package" value="ICPDoNotBackup"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/ICPDoNotBackup.h" />
+        <source-file src="src/ios/ICPDoNotBackup.m" />
+    </platform>
+</plugin>
