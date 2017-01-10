@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="fr.guillaumebarre.icpdonotbackup" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>ICPDoNotBackup</name>
+    <author>Guillaume Barre</author>
+    <license>Apache 2.0 License</license>
     <js-module name="ICPDoNotBackup" src="www/ICPDoNotBackup.js">
         <clobbers target="cordova.plugins.ICPDoNotBackup" />
     </js-module>
